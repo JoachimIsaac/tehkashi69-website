@@ -1,19 +1,9 @@
 *
     box-sizing: border-box
 
-
 body 
     font-family: 'Roboto' , sans-serif
     background: #19202a
-    @media screen and (max-width: 414px)
-        max-width: 100%
-        width: 100%
-        display: block
-        margin: 0 auto  
-
-        
-
-        
 
 header
     position: absolute
@@ -22,22 +12,8 @@ header
     display: flex
     width: 100% 
     justify-content: space-between
-    @media screen and (max-width: 560px)
-        display: block
-        text-align: center
-        
     .logo
         width: 50px
-        @media screen and (max-width: 560px)
-            text-align: center
-            position: relative
-            left: 195px
-            margin-bottom: 20px
-            @media screen and (max-width: 414px)
-                left: 170px
-            @media screen and (max-width: 375px)
-                left: 150px
-        
         img
             width: 100%
     nav
@@ -51,7 +27,7 @@ header
     
 #top-section
     position: relative
-    height: 100vh 
+    height: 100vh
     .blurredbg
         background-image: linear-gradient(45deg, rgba(25,32,42,1) 0%,rgba(25,32,42,1) 33%,rgba(25,32,42,0.96) 36%,rgba(25,32,42,0.86) 43%,rgba(176,38,183,0.57) 62%,rgba(125,185,232,0) 100%), url('/img/top.jpg')
         background-size: cover
@@ -60,7 +36,6 @@ header
         filter: blur(40px) saturate(130%) 
         position: absolute
         z-index: 1
-        
     .floating-img
         position: absolute
         z-index: 2
@@ -71,19 +46,9 @@ header
         align-items: flex-end
     .tekashi-img
         width: 30%
-        @media only screen and (max-width: 1215px)
-            width: 40%
-        @media only screen and (max-width: 1023px)  
-            width: 50%
-        @media only screen and (max-width: 767px)
-            width: 60%
-        @media screen and (max-width: 560px)
-            width: 90%
-        //ref.
         img
             width: 100%
             filter: contrast(150%)
-           
 
 
 
