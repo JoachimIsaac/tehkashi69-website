@@ -12,42 +12,60 @@ header
     display: flex
     width: 100% 
     justify-content: space-between
+    @media only screen and (max-width: 560px)
+        display: block
+        text-align: center
+        width: 100%
+        
+
     .logo
         width: 50px
+        @media only screen and (max-width: 560px)
+            display: block
+            margin: 0 auto
+            margin-bottom: 2rem
         img
             width: 100%
     nav
         align-self: center
+
         a
             color: white
             text-decoration: none
             font-size: 1.2rem
             font-weight: 300
             padding: 0 10px
+            @media only screen and (max-width: 560px)
+                font-size: 1.2rem
+                padding: 5px
     
 #top-section
     position: relative
     height: 100vh
+    @media only screen and (max-width: 560px)
+        display: block
     .blurredbg
         background-image: linear-gradient(45deg, rgba(25,32,42,1) 0%,rgba(25,32,42,1) 33%,rgba(25,32,42,0.96) 36%,rgba(25,32,42,0.86) 43%,rgba(176,38,183,0.57) 62%,rgba(125,185,232,0) 100%), url('/img/top.jpg')
         background-size: cover
         height: 100vh
         width: 100%
-        filter: blur(40px) saturate(130%) 
+        filter: blur(42px) saturate(130%) 
         position: absolute
         z-index: 1
     .floating-img
-        position: absolute
-        z-index: 2
         width: 100%
         height: 100vh
         display: flex
+        position: absolute
         justify-content: center
         align-items: flex-end
+        z-index: 2
     .tekashi-img
         width: 30%
         @media only screen and (max-width: 1023px)
             width: 50%
+        @media only screen and (max-width: 560px)
+            width: 60%
         img
             width: 100%
             filter: contrast(150%)
